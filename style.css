@@ -281,9 +281,66 @@ body{
 #page3{
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(47, 35, 35);
-position: relative;
+    /* background-color: rgb(47, 35, 35); */
+    position: relative;
+    padding: 17vh 2vw; 
+    margin-bottom: 20vh;
 }
+
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    margin-left: 28vw;
+}
+
+#page3 h1::before{
+    content: "02";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: 'silk serif';
+    left: -12%;
+    top: 8%;
+}
+
+#page3 .underline{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin-left: 28vw;
+}
+
+
+#img-div-container{
+    background-color: red;
+    padding: 1vw;
+    position: relative;
+
+}
+.img-div{
+    height: 33vw;
+    width: 24vw;
+    background-color: beige;
+    position: relative;
+    overflow: hidden;
+}
+.img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 #page4{
     min-height: 100vh;
@@ -352,26 +409,30 @@ position: relative;
 
 }
 
-#page4-blue-div{
-    background-color: #3f7df4;
+#page4-blue-div {
+    background-color: #3F7DF4;
     width: 33vw;
     padding: 3vw;
     position: relative;
     margin-top: -35vh;
-    margin-left: 24vw;
-    height: 85vh;
-    
-
+    margin-left: 26vw;
 }
 
-.blue-div-elem{
+.blue-div-elem {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     /* background-color: red; */
-    padding: 2.2vw 0;
-    border-bottom: 2px solid #ffffff93;
+    padding: 1.7vw 0;
+    border-bottom: 2px solid #ffffff94;
 }
+
 .blue-div-elem h4{
     font-size: 1.7vw;
     font-weight: 500;
@@ -518,4 +579,8 @@ position: relative;
 footer>h5{
     font-weight: 500;
     font-size: 1vw;
+}
+
+._canvas_container{
+z-index: 999999 ;
 }

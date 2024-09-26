@@ -4,6 +4,8 @@
 //     duration:0.6,
 //     delay:0.5
 // })
+// import { FirstPersonControls } from 'three/examples/jsm/controls/FirstPersonControls .js';
+
 
 function locomotiveAnimation(){
     gsap.registerPlugin(ScrollTrigger);
@@ -123,5 +125,17 @@ function cursorAnimation(){
 
 
 loaderAnimation();
-cursorAnimation();
+// cursorAnimation();
 locomotiveAnimation()
+
+
+function sheryAnimation(){
+    
+    Shery.imageEffect(".img-div",{
+        style:5, 
+        degug:true,
+        gooey:true
+    })
+}
+
+sheryAnimation()
